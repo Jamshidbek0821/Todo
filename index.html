@@ -7,28 +7,28 @@
     <style type="text/tailwindcss">
     </style>
 </head>
-<body class="bg-[#333] text-white font-sans">
+<body class="bg-[blue] text-white font-sans">
     <main class="pt-[80px] w-[500px] mx-auto">
         <h1 class="text-[30px] font-bold text-center mb-[30px]">Todo App</h1>
         <input type="text"
-            class="search-input w-full mb-3 p-[12px] text-[16px] bg-gray-700 text-white placeholder:text-gray-400 outline-none"
+            class="search-input rounded-[5px] w-full mb-3 p-[12px] text-[16px] bg-white text-gray-600 placeholder:text-gray-600 outline-none"
             placeholder="Search todos..." />
         <div class="filter-buttons flex justify-between mb-[15px]">
-            <button data-filter="all" class="bg-gray-600 hover:bg-gray-500 px-4 py-2">All</button>
-            <button data-filter="completed" class="bg-green-600 hover:bg-green-500 px-4 py-2">Completed</button>
-            <button data-filter="uncompleted" class="bg-yellow-600 hover:bg-yellow-500 px-4 py-2">Uncompleted</button>
+            <button data-filter="all" class="bg-white hover:text-[blue] text-gray-600 px-4 py-2 rounded-[5px]">All</button>
+            <button data-filter="completed" class="bg-white hover:text-[blue] text-gray-600 px-4 py-2 rounded-[5px]">Completed</button>
+            <button data-filter="uncompleted" class="bg-white hover:text-[blue] text-gray-600 px-4 py-2 rounded-[5px]">Uncompleted</button>
         </div>
         <div class="flex justify-between items-center mb-[15px] text-sm">
-            <p class="todo-stats text-gray-300">Total: 0 | Completed: 0 | Uncompleted: 0</p>
-            <button class="clear-all-btn bg-red-600 hover:bg-red-700 px-3 py-1 text-white text-sm rounded">Clear
+            <p class="todo-stats text-gray-200">Total: 0 | Completed: 0 | Uncompleted: 0</p>
+            <button class="clear-all-btn bg-red-600 hover:bg-red-700 px-3 py-1 hover:bg-white hover:text-gray-600 text-white text-sm rounded">Clear
                 All</button>
         </div>
-        <section class="bg-[#555] py-[15px] px-[10px] mb-[20px]">
+        <section class="bg-[#555] py-[15px] px-[10px] mb-[20px] rounded-[5px] ">
             <form autocomplete="off" class="site-form flex justify-between gap-[10px]">
-                <input class="form-input w-[400px] p-[15px] text-[17px] bg-gray-700 text-white outline-none" type="text"
+                <input class="form-input w-[400px] rounded-[5px] p-[15px] text-[17px] bg-gray-700 text-white outline-none" type="text"
                     name="todo" placeholder="Enter new todo..." required />
-                <button class="form-btn w-[80px] bg-red-500 hover:bg-red-600 text-white font-semibold" type="submit">
-                    Add
+                <button class="form-btn w-[80px] rounded-[5px] bg-red-500 hover:bg-white text-white hover:text-gray-600 font-semibold" type="submit">
+                    Create
                 </button>
             </form>
         </section>
