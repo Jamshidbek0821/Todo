@@ -32,7 +32,7 @@ elForm.addEventListener("submit", function (evt) {
       value: inputValue,
       isCompleted: false
     });
-    showAlert("New todo added!", "success");
+    showAlert("New todo created!", "success");
   }
 
   evt.target.reset();
